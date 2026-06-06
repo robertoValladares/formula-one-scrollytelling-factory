@@ -1,0 +1,18 @@
+{
+  "name": "formula-one-scrollytelling-factory",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "compile:sequence": "python scripts/compile_sequence.py hero_f1_scroll_sequence.mp4 --output public/generated/f1-sequence --fps 8 --desktop-width 1920 --mobile-width 1080 --quality 88"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "gsap": "^3.13.0",
+    "lenis": "^1.3.13",
+    "vite": "^7.1.11"
+  },
+  "devDependencies": {}
+}

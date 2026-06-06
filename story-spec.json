@@ -1,0 +1,52 @@
+{
+  "title": "Formula One Scrollytelling Factory",
+  "principle": "Scroll Progress -> Frame Number -> Canvas renders that exact frame.",
+  "sourceVideo": "hero_f1_scroll_sequence.mp4",
+  "sequencePath": "/generated/f1-sequence/manifest.json",
+  "scrollDistance": "700vh",
+  "chapters": [
+    {
+      "id": "garage-exterior",
+      "label": "Garage Exterior",
+      "progress": 0,
+      "headline": "PRECISION."
+    },
+    {
+      "id": "entering-garage",
+      "label": "Entering Garage",
+      "progress": 0.18,
+      "headline": "ENTER THE WORKS."
+    },
+    {
+      "id": "hero-car-reveal",
+      "label": "Formula One Hero Shot",
+      "progress": 0.38,
+      "headline": "ENGINEERED FOR SPEED."
+    },
+    {
+      "id": "pit-lane-exit",
+      "label": "Pit Lane Exit",
+      "progress": 0.58,
+      "headline": "EVERY MILLISECOND MATTERS."
+    },
+    {
+      "id": "pit-lane",
+      "label": "Pit Lane",
+      "progress": 0.76,
+      "headline": "THE MOMENT BEFORE IMPACT."
+    },
+    {
+      "id": "starting-grid",
+      "label": "Starting Grid",
+      "progress": 0.92,
+      "headline": "HOLD THE LINE."
+    }
+  ],
+  "postSequenceSections": [
+    "The Machine",
+    "Engineering",
+    "Performance",
+    "Track Technology",
+    "Final Call To Action"
+  ]
+}
