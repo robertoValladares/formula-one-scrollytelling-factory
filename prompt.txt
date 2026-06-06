@@ -1,0 +1,399 @@
+# Formula One Scrollytelling Factory
+
+You are a senior creative director, cinematic storyteller, motion designer, frontend architect and scrollytelling engineer.
+
+Your goal is to build a premium Formula One inspired scrollytelling website similar in quality, immersion and polish to Travel Next Level.
+
+IMPORTANT:
+
+This is NOT a traditional landing page.
+
+This is NOT a website with sections and scroll animations.
+
+This is a frame-controlled cinematic experience.
+
+The central rule of the project is:
+
+Scroll Progress → Frame Number → Canvas renders that exact frame.
+
+The website must use the provided master video and existing keyframes as source assets.
+
+Do NOT generate new story concepts.
+
+Do NOT generate new keyframes.
+
+Do NOT redesign the narrative.
+
+The assets already exist.
+
+Your mission is to transform them into a complete scrollytelling experience.
+
+---
+
+# Existing Assets
+
+Inside the project folder you will find:
+
+* Formula One cinematic master video
+* Keyframe 01
+* Keyframe 02
+* Keyframe 03
+* Keyframe 04
+* Keyframe 05
+* Keyframe 06
+
+The visual narrative already exists.
+
+The story is:
+
+1. Garage Exterior
+2. Entering Garage
+3. Formula One Hero Shot
+4. Pit Lane Exit
+5. Pit Lane
+6. Starting Grid
+
+The video already connects these moments.
+
+You must use the video as the primary source for the frame sequence.
+
+---
+
+# Creative Direction
+
+Visual style:
+
+* Formula One
+* Premium
+* Editorial
+* Luxury sports
+* Cinematic
+* Modern
+* Minimal
+* High-end motorsport
+
+Reference brands:
+
+* Formula One
+* Porsche
+* McLaren
+* Aston Martin
+* Apple
+* Nike
+* Red Bull Racing
+
+Avoid:
+
+* Generic racing websites
+* Video game aesthetics
+* Neon cyberpunk
+* Cheap effects
+* Overloaded interfaces
+* Corporate stock imagery
+
+Everything must feel expensive.
+
+---
+
+# Narrative
+
+The user is not browsing a website.
+
+The user is travelling through a Formula One world.
+
+The camera journey should feel continuous.
+
+The user must feel as if they are physically moving through:
+
+Garage
+
+↓
+
+Workshop
+
+↓
+
+Formula One Car Reveal
+
+↓
+
+Pit Lane
+
+↓
+
+Track Access
+
+↓
+
+Starting Grid
+
+The journey is more important than the content.
+
+---
+
+# Technical Architecture
+
+Build the project using:
+
+* Vite
+* GSAP
+* ScrollTrigger
+* Lenis
+
+The primary renderer must be CanvasSequence.
+
+The website must:
+
+1. Convert the provided video into frames.
+2. Generate manifest.json.
+3. Render frames on canvas.
+4. Map scroll progress to frame number.
+5. Update canvas continuously while scrolling.
+
+The implementation must follow:
+
+Scroll Progress
+↓
+Frame Index
+↓
+Canvas Render
+
+Do not use the original video as the hero experience.
+
+Use frame sequences.
+
+---
+
+# Frame Compilation
+
+Create:
+
+scripts/compile_sequence.py
+
+The script must:
+
+* Accept MP4 input
+* Extract frames
+* Prefer WebP
+* Generate poster image
+* Generate manifest.json
+* Support desktop and mobile versions
+
+Output structure:
+
+public/generated/f1-sequence/
+
+frame_0001.webp
+frame_0002.webp
+frame_0003.webp
+...
+
+poster.webp
+
+manifest.json
+
+---
+
+# Hero Experience
+
+The hero must be pinned.
+
+The canvas occupies the entire viewport.
+
+The frame sequence is controlled by scroll.
+
+The user should remain inside the Formula One cinematic sequence for a long scroll distance.
+
+Recommended:
+
+500vh to 800vh
+
+The camera progression must feel slow and deliberate.
+
+Never rush.
+
+The feeling should resemble a luxury Formula One documentary.
+
+---
+
+# Typography
+
+Large editorial typography.
+
+Massive headlines.
+
+Very little text.
+
+The visuals are the primary storyteller.
+
+Text must remain HTML.
+
+Never burn text into images.
+
+Suggested typography style:
+
+* Condensed
+* Motorsport inspired
+* Premium editorial
+
+Examples:
+
+PRECISION.
+
+EVERY MILLISECOND MATTERS.
+
+ENGINEERED FOR SPEED.
+
+THE MOMENT BEFORE IMPACT.
+
+---
+
+# Layout Rules
+
+Canvas:
+
+* Full viewport
+* Fixed
+* Background layer
+
+Content:
+
+* HTML overlay
+* Layered above canvas
+
+Header:
+
+* Minimal
+* Transparent
+
+Navigation:
+
+* Extremely subtle
+
+No distracting UI.
+
+---
+
+# Additional Sections
+
+After the cinematic sequence:
+
+Section 01:
+The Machine
+
+Section 02:
+Engineering
+
+Section 03:
+Performance
+
+Section 04:
+Track Technology
+
+Section 05:
+Final Call To Action
+
+These sections may use normal GSAP animations.
+
+The frame sequence is only for the main cinematic experience.
+
+---
+
+# Mobile
+
+Create a dedicated mobile sequence if needed.
+
+Avoid aggressive cropping.
+
+Preserve important visual elements.
+
+Ensure readability.
+
+Target:
+
+390x844
+
+---
+
+# Performance
+
+Must remain smooth.
+
+Optimize:
+
+* Frame loading
+* Memory usage
+* Canvas rendering
+* Image size
+
+Use lazy loading when possible.
+
+Prevent unnecessary re-renders.
+
+---
+
+# Quality Assurance
+
+Validate:
+
+Desktop:
+1440x900
+
+Mobile:
+390x844
+
+Check progress:
+
+0%
+10%
+25%
+50%
+75%
+90%
+100%
+
+Verify:
+
+* No blank canvas
+* No broken frames
+* No frame jumps
+* No text overlap
+* Smooth scroll
+* CTA visible
+* Reduced motion fallback
+
+---
+
+# Deliverables
+
+The project is only complete when the following exist:
+
+story-spec.json
+
+scripts/compile_sequence.py
+
+public/generated/f1-sequence/
+
+manifest.json
+
+frame files
+
+poster file
+
+CanvasSequence renderer
+
+GSAP integration
+
+Lenis integration
+
+QA notes
+
+Local development server running
+
+Provide the local URL at the end.
+
+Begin implementation immediately.
+
+Analyze the existing assets first.
+
+Then build the complete Formula One scrollytelling experience.
